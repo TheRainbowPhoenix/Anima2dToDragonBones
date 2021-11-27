@@ -293,7 +293,7 @@ def anima2d_to_dragon_bones():
 
         # Hack cause I'm terrible with UV
         # im1 = ImageOps.flip(im1)
-        im1.save(filename + ".png", "PNG")
+        # im1.save(filename + ".png", "PNG")
 
     with open(f"{anima2d_name}_ske.json", "w+") as out:
         import json
