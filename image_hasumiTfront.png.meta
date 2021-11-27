@@ -1,0 +1,1473 @@
+fileFormatVersion: 2
+guid: fbb4732e0349cf5479b0892492d8afb8
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: image_hasumiTfront_0
+    21300002: image_hasumiTfront_1
+    21300004: image_hasumiTfront_2
+    21300006: image_hasumiTfront_3
+    21300008: image_hasumiTfront_4
+    21300010: image_hasumiTfront_5
+    21300012: image_hasumiTfront_6
+    21300014: image_hasumiTfront_7
+    21300016: image_hasumiTfront_8
+    21300018: image_hasumiTfront_9
+    21300020: image_hasumiTfront_10
+    21300022: image_hasumiTfront_11
+    21300024: image_hasumiTfront_12
+    21300026: image_hasumiTfront_13
+    21300028: image_hasumiTfront_14
+    21300030: image_hasumiTfront_15
+    21300032: image_hasumiTfront_16
+    21300034: image_hasumiTfront_17
+    21300036: image_hasumiTfront_18
+    21300038: image_hasumiTfront_19
+    21300040: image_hasumiTfront_20
+    21300042: image_hasumiTfront_21
+    21300044: image_hasumiTfront_22
+    21300046: image_hasumiTfront_23
+    21300048: image_hasumiTfront_24
+    21300050: image_hasumiTfront_25
+    21300052: image_hasumiTfront_26
+    21300054: image_hasumiTfront_27
+    21300056: image_hasumiTfront_28
+    21300058: image_hasumiTfront_29
+    21300060: image_hasumiTfront_30
+    21300062: image_hasumiTfront_31
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 4
+  maxTextureSize: 491
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: image_hasumiTfront_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 303
+        width: 26
+        height: 24
+      alignment: 9
+      pivot: {x: 0.46153852, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: -3}
+        - {x: -10, y: 5}
+        - {x: -7, y: 10}
+        - {x: 0, y: 10}
+        - {x: 8, y: 4}
+        - {x: 8, y: 2}
+        - {x: -1, y: -7}
+        - {x: -6, y: -7}
+      physicsShape:
+      - - {x: -4, y: 9}
+        - {x: -7, y: 8}
+        - {x: -9, y: 5}
+        - {x: -9, y: -4}
+        - {x: -8, y: -6}
+        - {x: -1, y: -6}
+        - {x: 7, y: 2}
+        - {x: 6, y: 5}
+        - {x: 0, y: 9}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d1b9ea30264d40b37dccc3b2e6588c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 304
+        width: 22
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5217391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -0.5}
+        - {x: -6, y: 7.5}
+        - {x: 2, y: 7.5}
+        - {x: 6, y: -0.5}
+        - {x: 6, y: -6.5}
+        - {x: -4, y: -6.5}
+      physicsShape:
+      - - {x: -5, y: -1.5}
+        - {x: -1, y: -5.5}
+        - {x: 5, y: -5.5}
+        - {x: 5, y: 0.5}
+        - {x: 4, y: 2.5}
+        - {x: -2, y: 6.5}
+        - {x: -5, y: 5.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e981676b476e461d85c26542dd37df86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_2
+      rect:
+        serializedVersion: 2
+        x: 45.07613
+        y: 223.05128
+        width: 65
+        height: 103.948715
+      alignment: 9
+      pivot: {x: 0.49882877, y: 0.51899356}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.5, y: -39.01228}
+        - {x: -27.5, y: -33.01228}
+        - {x: -25.5, y: -22.01228}
+        - {x: -21.5, y: -11.01228}
+        - {x: -17.5, y: -0.01228333}
+        - {x: -16.5, y: 9.987716}
+        - {x: -19.5, y: 11.98772}
+        - {x: -20.5, y: 21.98772}
+        - {x: -18.5, y: 30.98772}
+        - {x: -14.5, y: 39.98771}
+        - {x: -8.500004, y: 45.98771}
+        - {x: -4.500004, y: 48.98771}
+        - {x: 14.5, y: 48.98771}
+        - {x: 24.49999, y: 40.98772}
+        - {x: 27.5, y: 31.98772}
+        - {x: 27.5, y: 11.98772}
+        - {x: 27.5, y: -8.012283}
+        - {x: 23.5, y: -17.01228}
+        - {x: 25.5, y: -29.01228}
+        - {x: 26.49999, y: -37.01228}
+        - {x: 21.49999, y: -45.01228}
+        - {x: 11.5, y: -45.01228}
+        - {x: 9.499996, y: -40.01228}
+        - {x: 6.499996, y: -31.01228}
+        - {x: 5.499996, y: -45.01228}
+        - {x: -0.5000038, y: -49.01228}
+        - {x: -2.500004, y: -49.01228}
+        - {x: -7.500003, y: -45.01228}
+        - {x: -16.5, y: -46.01228}
+        - {x: -24.5, y: -43.01228}
+      physicsShape:
+      - - {x: 23.5, y: -37.01228}
+        - {x: 23.5, y: -17.01228}
+        - {x: 25.5, y: -11.01228}
+        - {x: 26.5, y: 2.987717}
+        - {x: 26.5, y: 33.98772}
+        - {x: 23.5, y: 40.98772}
+        - {x: 15.5, y: 47.98772}
+        - {x: -0.5, y: 47.98772}
+        - {x: -6.5, y: 46.98772}
+        - {x: -16.5, y: 36.98772}
+        - {x: -19.5, y: 25.98772}
+        - {x: -18.5, y: 11.98772}
+        - {x: -15.5, y: 7.987717}
+        - {x: -25.5, y: -22.01228}
+        - {x: -26.5, y: -33.01228}
+        - {x: -26.5, y: -37.01228}
+        - {x: -24.5, y: -39.01228}
+        - {x: -12.5, y: -46.01228}
+        - {x: -11.5, y: -40.01228}
+        - {x: -2.5, y: -47.01228}
+        - {x: 1.5, y: -47.01228}
+        - {x: 5.5, y: -39.01228}
+        - {x: 8.5, y: -37.01228}
+        - {x: 11.5, y: -43.01228}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a29fb309dbe42a69bd6ba00272d7c73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_3
+      rect:
+        serializedVersion: 2
+        x: 105.0267
+        y: 266.0761
+        width: 42
+        height: 60.92389
+      alignment: 9
+      pivot: {x: 0.5112679, y: 0.5239963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.491919, y: -27.0166}
+        - {x: -6.491919, y: -27.0166}
+        - {x: -13.49192, y: -17.0166}
+        - {x: -16.49192, y: -5.016597}
+        - {x: -16.49192, y: 11.9834}
+        - {x: -15.49192, y: 17.9834}
+        - {x: -3.491919, y: 26.9834}
+        - {x: 14.50808, y: 26.9834}
+        - {x: 15.50808, y: 23.9834}
+        - {x: 15.50808, y: 12.9834}
+        - {x: 9.008081, y: -5.516598}
+        - {x: 2.508081, y: -24.0166}
+      physicsShape:
+      - - {x: 12.50808, y: 25.9834}
+        - {x: -3.491919, y: 25.9834}
+        - {x: -15.49192, y: 16.9834}
+        - {x: -15.49192, y: -6.0166}
+        - {x: -13.49192, y: -13.0166}
+        - {x: -12.49192, y: -15.0166}
+        - {x: -7.491918, y: -23.0166}
+        - {x: -1.491919, y: -23.0166}
+        - {x: 0.5080814, y: -22.0166}
+        - {x: 14.50808, y: 18.9834}
+        - {x: 15.50808, y: 22.9834}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e7ee21651d400bad1c750b472f836d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_4
+      rect:
+        serializedVersion: 2
+        x: 143.0761
+        y: 253.07611
+        width: 52
+        height: 73.92389
+      alignment: 9
+      pivot: {x: 0.4889204, y: 0.52654004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.500004, y: -19.02468}
+        - {x: -4.500004, y: -34.02468}
+        - {x: -12.5, y: -34.02468}
+        - {x: -20.5, y: -21.02468}
+        - {x: -20.5, y: 0.9753227}
+        - {x: -20.5, y: 22.97532}
+        - {x: -17.5, y: 27.97532}
+        - {x: -10.5, y: 33.97532}
+        - {x: -0.5000038, y: 33.97532}
+        - {x: 11.5, y: 30.97532}
+        - {x: 20.5, y: 17.97532}
+        - {x: 21.5, y: 11.97532}
+        - {x: 21.5, y: 1.975323}
+        - {x: 13.5, y: -6.024677}
+        - {x: -4.500004, y: -4.024677}
+      physicsShape:
+      - - {x: 16.5, y: -0.02467728}
+        - {x: 20.5, y: 6.975323}
+        - {x: 20.5, y: 14.97532}
+        - {x: 16.5, y: 22.97532}
+        - {x: 8.499998, y: 32.97532}
+        - {x: -13.5, y: 32.97532}
+        - {x: -19.5, y: 23.97532}
+        - {x: -19.5, y: -15.02468}
+        - {x: -11.5, y: -28.02468}
+        - {x: -8.500002, y: -28.02468}
+        - {x: -6.500002, y: -27.02468}
+        - {x: -7.500001, y: -12.02468}
+        - {x: -1.500002, y: 4.975322}
+        - {x: 5.499998, y: -5.024677}
+      tessellationDetail: 0
+      bones: []
+      spriteID: daaa3d7a12e34e62833351472f82ea27
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 295
+        width: 26
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: -10.5}
+        - {x: -8, y: 10.5}
+        - {x: 8, y: 10.5}
+        - {x: 8, y: -10.5}
+      physicsShape:
+      - - {x: -5, y: 4.5}
+        - {x: -8, y: 1.5}
+        - {x: -8, y: -0.5}
+        - {x: -6, y: -1.5}
+        - {x: 2, y: -1.5}
+        - {x: 5, y: -0.5}
+        - {x: 7, y: 1.5}
+        - {x: 6, y: 4.5}
+      - - {x: 0, y: 6.5}
+        - {x: 3, y: 7.5}
+        - {x: 3, y: 10.5}
+        - {x: 0, y: 11.5}
+        - {x: -2, y: 9.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ae4f78a25d4fd6b94e2db0634f0b62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_6
+      rect:
+        serializedVersion: 2
+        x: 214.2689
+        y: 302.3828
+        width: 21
+        height: 21
+      alignment: 9
+      pivot: {x: 0.4633833, y: 0.45796278}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 2.5}
+        - {x: -4.5, y: 5.5}
+        - {x: 5.5, y: 5.5}
+        - {x: 5.5, y: -2.5}
+        - {x: 2.5, y: -5.5}
+        - {x: -1.5, y: -5.5}
+        - {x: -5.5, y: -3.5}
+      physicsShape:
+      - - {x: 7.268937, y: -10.61722}
+        - {x: 6.268937, y: -7.617218}
+        - {x: -4.731063, y: -7.617218}
+        - {x: -5.731063, y: -10.61722}
+      - - {x: 5.268937, y: 4.382782}
+        - {x: 1.268937, y: 5.382782}
+        - {x: -3.731063, y: 5.382782}
+        - {x: -4.731063, y: 2.382782}
+        - {x: -4.731063, y: -1.617218}
+        - {x: -1.731063, y: -4.617218}
+        - {x: 2.268937, y: -4.617218}
+        - {x: 4.268937, y: -3.617218}
+        - {x: 5.268937, y: -0.617218}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2129d902884f48b6961e83171798c4df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 275.8795
+        width: 34.07612
+        height: 35
+      alignment: 9
+      pivot: {x: 0.44019097, y: 0.4748718}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.43918, y: -0.9866247}
+        - {x: -15.43918, y: 10.01338}
+        - {x: -12.43918, y: 14.01338}
+        - {x: 10.56082, y: 14.01338}
+        - {x: 10.56082, y: -10.98662}
+        - {x: -3.439176, y: -10.98662}
+        - {x: -13.43918, y: -7.986625}
+      physicsShape:
+      - - {x: -4.201282, y: -14.60714}
+        - {x: -4.201282, y: -15.60714}
+        - {x: 12.79872, y: -15.60714}
+        - {x: 12.79872, y: -14.60714}
+        - {x: 8.798717, y: -11.60714}
+        - {x: -0.2012815, y: -11.60714}
+      - - {x: -3.201282, y: 14.39286}
+        - {x: -10.20128, y: 12.39286}
+        - {x: -15.20128, y: 9.392861}
+        - {x: -15.20128, y: 0.3928614}
+        - {x: -13.20128, y: -4.607139}
+        - {x: -1.201282, y: -9.607139}
+        - {x: 8.798717, y: -9.607139}
+        - {x: 8.798717, y: 11.39286}
+        - {x: 7.798718, y: 14.39286}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1bdab264f44dbaa3cd087ee1f12759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_8
+      rect:
+        serializedVersion: 2
+        x: 213.7657
+        y: 289.5137
+        width: 25
+        height: 21
+      alignment: 9
+      pivot: {x: 0.42937377, y: 0.47553653}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 2.5}
+        - {x: -6.5, y: 5.5}
+        - {x: 7.5, y: 5.5}
+        - {x: 7.5, y: -1.5}
+        - {x: 4.5, y: -5.5}
+        - {x: -3.5, y: -5.5}
+        - {x: -7.5, y: -2.5}
+      physicsShape:
+      - - {x: -6.234329, y: 5.513732}
+        - {x: -6.234329, y: -3.486267}
+        - {x: 5.765671, y: -3.486267}
+        - {x: 6.76567, y: -0.4862671}
+        - {x: 6.76567, y: 5.513732}
+      - - {x: -4.234329, y: 11.51373}
+        - {x: -3.234329, y: 8.513733}
+        - {x: 1.765671, y: 8.513733}
+        - {x: 3.765671, y: 10.51373}
+        - {x: 3.765671, y: 11.51373}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64097f6ae0c449189b0b3ad00392bb96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 225.9105
+        width: 49.02675
+        height: 58.000015
+      alignment: 9
+      pivot: {x: 0.46913165, y: 0.49292138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.999998, y: -27.03807}
+        - {x: -21, y: -19.03807}
+        - {x: -21, y: 11.96193}
+        - {x: -15, y: 20.96193}
+        - {x: 10, y: 20.96193}
+        - {x: 21, y: 8.961933}
+        - {x: 21, y: -10.03807}
+        - {x: 19, y: -20.03807}
+        - {x: 17, y: -27.03807}
+      physicsShape:
+      - - {x: -9.999998, y: 21.29634}
+        - {x: -20, y: 16.29634}
+        - {x: -20, y: -7.703655}
+        - {x: -4.999998, y: -25.70366}
+        - {x: 13, y: -25.70366}
+        - {x: 20, y: -22.70366}
+        - {x: 20, y: 13.29634}
+        - {x: 12, y: 21.29634}
+      - - {x: -4.999998, y: 27.29634}
+        - {x: -4.999998, y: 26.29634}
+        - {x: -1.999998, y: 23.29634}
+        - {x: 1.000002, y: 23.29634}
+        - {x: 3.000002, y: 25.29634}
+        - {x: 3.000002, y: 27.29634}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb3b84b5efb4ad9a0fadee95f2ea78a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_10
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 253
+        width: 16
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: -2.5}
+        - {x: -3, y: 2.5}
+        - {x: 3, y: 2.5}
+        - {x: 3, y: -2.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c036febc79f344b0a0e3cb46ffd73c1f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_11
+      rect:
+        serializedVersion: 2
+        x: 286.0761
+        y: 50.076096
+        width: 191
+        height: 250.00002
+      alignment: 9
+      pivot: {x: 0.4996017, y: 0.4996954}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -72.50819, y: 80}
+        - {x: -90.50819, y: 109}
+        - {x: -90.50819, y: 119}
+        - {x: -77.50819, y: 119}
+        - {x: 90.49181, y: -104}
+        - {x: 90.49181, y: -121}
+        - {x: 79.49181, y: -121}
+      physicsShape:
+      - - {x: 72.49181, y: -85.5}
+        - {x: 58.49181, y: -69.5}
+        - {x: 52.49181, y: -57.5}
+        - {x: 41.49181, y: -45.5}
+        - {x: 29.49181, y: -29.5}
+        - {x: 9.491814, y: -2.5}
+        - {x: -5.508186, y: 16.5}
+        - {x: -31.50819, y: 51.5}
+        - {x: -38.50819, y: 64.5}
+        - {x: -55.50819, y: 82.49999}
+        - {x: -56.50819, y: 86.5}
+        - {x: -61.50819, y: 94.49999}
+        - {x: -70.50819, y: 107.5}
+        - {x: -82.50819, y: 122.5}
+        - {x: -87.50819, y: 122.5}
+        - {x: -91.50819, y: 119.5}
+        - {x: -91.50819, y: 111.5}
+        - {x: -78.50819, y: 96.5}
+        - {x: -71.50819, y: 85.5}
+        - {x: -57.50819, y: 69.49999}
+        - {x: -50.50819, y: 59.5}
+        - {x: -37.50819, y: 42.5}
+        - {x: -28.50819, y: 30.5}
+        - {x: -11.50819, y: 7.5}
+        - {x: 3.491814, y: -12.5}
+        - {x: 18.49181, y: -31.5}
+        - {x: 40.49181, y: -63.5}
+        - {x: 55.49181, y: -82.5}
+        - {x: 58.49181, y: -90.5}
+        - {x: 78.49181, y: -115.5}
+        - {x: 84.49181, y: -120.5}
+        - {x: 88.49181, y: -120.5}
+        - {x: 91.49181, y: -117.5}
+        - {x: 92.49181, y: -112.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956905d14e3642508593af53ebb3a2fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_12
+      rect:
+        serializedVersion: 2
+        x: 4.0761204
+        y: 120.0541
+        width: 58
+        height: 111.00002
+      alignment: 9
+      pivot: {x: 0.4986877, y: 0.4995121}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.999998, y: -50.51369}
+        - {x: -14, y: -47.51369}
+        - {x: -21, y: -40.51369}
+        - {x: -24, y: -30.51369}
+        - {x: -20, y: -17.51369}
+        - {x: -16, y: -4.513687}
+        - {x: -20, y: 0.4863129}
+        - {x: -24, y: 12.48631}
+        - {x: -24, y: 29.48631}
+        - {x: -19, y: 38.48631}
+        - {x: -20, y: 43.98631}
+        - {x: -21, y: 49.48631}
+        - {x: -20, y: 50.48631}
+        - {x: -14, y: 50.48631}
+        - {x: -7.999998, y: 50.48631}
+        - {x: -3.999998, y: 49.48631}
+        - {x: 4.000002, y: 34.48631}
+        - {x: 11, y: 24.48631}
+        - {x: 14, y: 0.4863129}
+        - {x: 22, y: -18.51369}
+        - {x: 24, y: -29.51369}
+        - {x: 24, y: -37.51369}
+        - {x: 8.000002, y: -48.51369}
+        - {x: 3.000002, y: -50.51369}
+      physicsShape:
+      - - {x: 12, y: 3.486313}
+        - {x: 11, y: 25.48631}
+        - {x: 1.000002, y: 41.48631}
+        - {x: -7.999998, y: 50.48631}
+        - {x: -16, y: 50.48631}
+        - {x: -22, y: 49.48631}
+        - {x: -24, y: 35.48631}
+        - {x: -24, y: 9.486313}
+        - {x: -17, y: -5.513687}
+        - {x: -22, y: -29.51369}
+        - {x: -20, y: -40.51369}
+        - {x: -14, y: -45.51369}
+        - {x: -4.999998, y: -49.51368}
+        - {x: 7.000002, y: -49.51368}
+        - {x: 23, y: -37.51369}
+        - {x: 23, y: -23.51369}
+        - {x: 22, y: -17.51369}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28dff6e0da804e72ad7dd33375b6d6c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_13
+      rect:
+        serializedVersion: 2
+        x: 56.05637
+        y: 197
+        width: 41.999996
+        height: 31.999985
+      alignment: 9
+      pivot: {x: 0.4986579, y: 0.51562524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.99012, y: -5.993544}
+        - {x: -15.99012, y: 5.006456}
+        - {x: -8.990127, y: 12.00646}
+        - {x: -0.9901266, y: 13.00646}
+        - {x: 11.00987, y: 13.00646}
+        - {x: 16.00987, y: 6.006456}
+        - {x: 16.00987, y: -2.993544}
+        - {x: 14.00987, y: -6.993544}
+        - {x: 2.009873, y: -8.993543}
+        - {x: -14.99012, y: -8.993543}
+      physicsShape:
+      - - {x: -9.990122, y: 13.00646}
+        - {x: -15.99012, y: 0.006456614}
+        - {x: -15.99012, y: -7.993544}
+        - {x: 3.009877, y: -7.993544}
+        - {x: 15.00988, y: -5.993544}
+        - {x: 15.00988, y: 4.006456}
+        - {x: 10.00988, y: 13.00646}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170d8c97d5fd4c9c80b50c2c062b7d6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_14
+      rect:
+        serializedVersion: 2
+        x: 105.0267
+        y: 209.0267
+        width: 42
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5112679, y: 0.4994056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: -17.47531}
+        - {x: -16.5, y: -14.47531}
+        - {x: -16.5, y: -9.475311}
+        - {x: -13.5, y: -1.475311}
+        - {x: 4.500004, y: 17.52469}
+        - {x: 13.5, y: 17.52469}
+        - {x: 15.5, y: 16.52469}
+        - {x: 15.5, y: -0.4753113}
+        - {x: -2.499996, y: -17.47531}
+      physicsShape:
+      - - {x: 15.5, y: 11.52469}
+        - {x: 13.5, y: 16.52469}
+        - {x: 6.500004, y: 16.52469}
+        - {x: -14.5, y: -0.4753113}
+        - {x: -15.5, y: -4.475311}
+        - {x: -15.5, y: -15.47531}
+        - {x: -11.5, y: -16.47531}
+        - {x: -2.499996, y: -16.47531}
+        - {x: 3.500004, y: -10.47531}
+        - {x: 12.5, y: 0.5246887}
+        - {x: 15.5, y: 4.524689}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6976063d15444b82bcf4ab638939768a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_15
+      rect:
+        serializedVersion: 2
+        x: 166.3376
+        y: 203.5914
+        width: 36
+        height: 55
+      alignment: 9
+      pivot: {x: 0.47673458, y: 0.4710646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.02469, y: 3.038063}
+        - {x: -11.02469, y: 25.03806}
+        - {x: -1.024691, y: 25.03806}
+        - {x: 3.975309, y: 20.03806}
+        - {x: 11.97531, y: 3.038063}
+        - {x: 14.97531, y: -6.961937}
+        - {x: 14.97531, y: -18.96194}
+        - {x: 11.97531, y: -19.96194}
+        - {x: -5.024691, y: -19.96194}
+      physicsShape:
+      - - {x: -14.26326, y: -24.8705}
+        - {x: -2.263262, y: -24.8705}
+        - {x: -2.263262, y: -23.87051}
+        - {x: -4.263262, y: -20.87051}
+        - {x: -10.26326, y: -20.87051}
+        - {x: -14.26326, y: -21.87051}
+      - - {x: -9.263262, y: 24.12949}
+        - {x: -11.26326, y: 23.12949}
+        - {x: -11.26326, y: 10.12949}
+        - {x: -5.263262, y: -10.87051}
+        - {x: 1.736738, y: -18.87051}
+        - {x: 9.736738, y: -18.87051}
+        - {x: 13.73674, y: -17.87051}
+        - {x: 13.73674, y: -8.870506}
+        - {x: 12.73674, y: -0.8705063}
+        - {x: 4.736738, y: 16.12949}
+        - {x: -1.263262, y: 24.12949}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664c946d357448878c507c4bbf91bab8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_16
+      rect:
+        serializedVersion: 2
+        x: 57.076115
+        y: 162
+        width: 52.000004
+        height: 43
+      alignment: 9
+      pivot: {x: 0.49853623, y: 0.49999964}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.49999, y: -14}
+        - {x: -20.49999, y: 1}
+        - {x: -20.49999, y: 16}
+        - {x: -8.499994, y: 16}
+        - {x: 3.500006, y: 16}
+        - {x: 12.50001, y: 12}
+        - {x: 21.50001, y: 8}
+        - {x: 21.50001, y: -0.5}
+        - {x: 21.50001, y: -9}
+        - {x: 12.50001, y: -17}
+        - {x: 1.000006, y: -17}
+        - {x: -10.49999, y: -17}
+      physicsShape:
+      - - {x: 8.500006, y: -22.49998}
+        - {x: 7.500006, y: -19.49998}
+        - {x: 1.500006, y: -19.49998}
+        - {x: 0.5000057, y: -22.49998}
+      - - {x: 8.500006, y: 14.50002}
+        - {x: -7.499994, y: 14.50002}
+        - {x: -19.49999, y: 11.50002}
+        - {x: -19.49999, y: -6.499985}
+        - {x: -10.49999, y: -16.49998}
+        - {x: 13.50001, y: -16.49998}
+        - {x: 21.50001, y: -11.49998}
+        - {x: 21.50001, y: 4.500015}
+      - - {x: -20.49999, y: 21.50002}
+        - {x: -19.49999, y: 18.50002}
+        - {x: -15.49999, y: 18.50002}
+        - {x: -13.49999, y: 20.50002}
+        - {x: -13.49999, y: 21.50002}
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb10542c840c415cb6f759767da49cba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_17
+      rect:
+        serializedVersion: 2
+        x: 106.0513
+        y: 169.5429
+        width: 59
+        height: 45
+      alignment: 9
+      pivot: {x: 0.49913025, y: 0.47682497}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.4876, y: 17.98057}
+        - {x: -12.4876, y: 17.98057}
+        - {x: -6.487597, y: 14.98057}
+        - {x: 1.012403, y: 9.480566}
+        - {x: 8.512403, y: 3.980566}
+        - {x: 17.5124, y: 1.980566}
+        - {x: 24.5124, y: -7.019434}
+        - {x: 24.5124, y: -13.01943}
+        - {x: 20.5124, y: -17.01943}
+        - {x: 10.5124, y: -17.01943}
+        - {x: 3.762403, y: -12.51943}
+        - {x: -2.987597, y: -8.019434}
+        - {x: -9.737597, y: -3.519434}
+        - {x: -16.4876, y: 0.9805659}
+        - {x: -24.48759, y: 7.980566}
+        - {x: -24.48759, y: 14.98057}
+      physicsShape:
+      - - {x: -13.4876, y: 16.98054}
+        - {x: -23.4876, y: 16.98054}
+        - {x: -23.4876, y: -0.01946452}
+        - {x: 7.512403, y: -17.01946}
+        - {x: 23.5124, y: -17.01946}
+        - {x: 23.5124, y: -7.019464}
+        - {x: 19.5124, y: 0.9805355}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d830c6f1e907425f9c4eb51f74c7843f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_18
+      rect:
+        serializedVersion: 2
+        x: 163.6213
+        y: 146.9827
+        width: 42
+        height: 65
+      alignment: 9
+      pivot: {x: 0.47330186, y: 0.50026643}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.483393, y: 23.97434}
+        - {x: -5.483393, y: 22.97434}
+        - {x: -2.483393, y: 20.97434}
+        - {x: 0.5166073, y: 11.97434}
+        - {x: 3.516607, y: 2.974342}
+        - {x: 5.516607, y: -1.525658}
+        - {x: 7.516607, y: -6.025658}
+        - {x: 10.51661, y: -10.52566}
+        - {x: 13.51661, y: -15.02566}
+        - {x: 15.51661, y: -20.02566}
+        - {x: 15.51661, y: -28.02566}
+        - {x: 9.516607, y: -31.02566}
+        - {x: 5.516607, y: -31.02566}
+        - {x: 0.5166073, y: -26.02566}
+        - {x: -3.483393, y: -17.02566}
+        - {x: -5.483393, y: -9.025658}
+        - {x: -8.983393, y: -3.025658}
+        - {x: -12.48339, y: 2.974342}
+        - {x: -16.48339, y: 11.97434}
+        - {x: -16.48339, y: 20.97434}
+        - {x: -12.48339, y: 23.97434}
+      physicsShape:
+      - - {x: -3.404978, y: 24.40571}
+        - {x: -15.40498, y: 24.40571}
+        - {x: -15.40498, y: 13.40571}
+        - {x: -14.40498, y: 8.405708}
+        - {x: -2.404978, y: -24.59429}
+        - {x: 5.595022, y: -28.59429}
+        - {x: 13.59502, y: -28.59429}
+        - {x: 15.59502, y: -26.59429}
+        - {x: 15.59502, y: -21.59429}
+        - {x: 3.595022, y: 21.40571}
+      - - {x: 0.5950221, y: 30.40571}
+        - {x: 0.5950221, y: 29.40571}
+        - {x: 3.595022, y: 26.40571}
+        - {x: 8.595022, y: 26.40571}
+        - {x: 12.59502, y: 29.40571}
+        - {x: 12.59502, y: 30.40571}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6fc4d08af347dbbf657e5d0891df8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_19
+      rect:
+        serializedVersion: 2
+        x: 56.05132
+        y: 107.5363
+        width: 51.999996
+        height: 65
+      alignment: 9
+      pivot: {x: 0.603949, y: 0.51134336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.004208, y: -30.01814}
+        - {x: -21.0042, y: -30.01814}
+        - {x: -21.0042, y: -21.01814}
+        - {x: -5.004207, y: 20.98186}
+        - {x: -2.004208, y: 24.98186}
+        - {x: 15.99579, y: 24.98186}
+        - {x: 20.99579, y: 22.98186}
+        - {x: 20.99579, y: -3.018135}
+      physicsShape:
+      - - {x: 0.9957943, y: 22.98186}
+        - {x: -6.004206, y: 20.98186}
+        - {x: -20.00421, y: -26.01814}
+        - {x: -20.00421, y: -28.01814}
+        - {x: -18.00421, y: -30.01814}
+        - {x: -8.004206, y: -27.01814}
+        - {x: 19.99579, y: 6.981857}
+        - {x: 19.99579, y: 22.98186}
+      - - {x: -12.00421, y: 30.98186}
+        - {x: -12.00421, y: 29.98186}
+        - {x: -9.004206, y: 25.98186}
+        - {x: 12.99579, y: 25.98186}
+        - {x: 13.99579, y: 29.98186}
+        - {x: 13.99579, y: 30.98186}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d040fa5567da434dbbf03e0473ca1e61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_20
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 115
+        width: 22
+        height: 55
+      alignment: 9
+      pivot: {x: 0.5227273, y: 0.49090907}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -6.5}
+        - {x: -6, y: 8.5}
+        - {x: -3, y: 22.5}
+        - {x: 3, y: 22.5}
+        - {x: 6, y: 21.5}
+        - {x: 6, y: -14.5}
+        - {x: 3, y: -22.5}
+        - {x: -2, y: -22.5}
+        - {x: -4, y: -21.5}
+      physicsShape:
+      - - {x: -1.999999, y: 21.5}
+        - {x: -4.999999, y: 15.5}
+        - {x: -4.999999, y: -13.5}
+        - {x: -3.999999, y: -17.5}
+        - {x: -0.999999, y: -20.5}
+        - {x: 1.000001, y: -20.5}
+        - {x: 6.000001, y: -17.5}
+        - {x: 6.000001, y: 21.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d211f2a019f439da07653809017b329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_21
+      rect:
+        serializedVersion: 2
+        x: 8.06685
+        y: 36.02676
+        width: 41
+        height: 87
+      alignment: 9
+      pivot: {x: 0.49836934, y: 0.4996924}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.50292, y: -19.47532}
+        - {x: -14.50292, y: -13.47532}
+        - {x: -14.75292, y: -5.225323}
+        - {x: -15.00292, y: 3.024677}
+        - {x: -15.25292, y: 11.27468}
+        - {x: -15.50292, y: 19.52468}
+        - {x: -14.50292, y: 26.52468}
+        - {x: -12.50292, y: 36.52468}
+        - {x: -6.502917, y: 38.52468}
+        - {x: 4.497083, y: 38.52468}
+        - {x: 9.497082, y: 32.52468}
+        - {x: 15.49708, y: 18.52468}
+        - {x: 15.49708, y: 5.524677}
+        - {x: 14.49708, y: 1.524677}
+        - {x: 10.49708, y: -13.47532}
+        - {x: 5.497083, y: -32.47532}
+        - {x: 0.4970827, y: -38.47532}
+        - {x: -5.502917, y: -38.47532}
+        - {x: -7.502917, y: -37.47532}
+        - {x: -15.50292, y: -31.47532}
+      physicsShape:
+      - - {x: 14.49708, y: 22.52468}
+        - {x: 6.497083, y: 37.52468}
+        - {x: -8.502917, y: 37.52468}
+        - {x: -10.50292, y: 36.52468}
+        - {x: -13.50292, y: 22.52468}
+        - {x: -15.50292, y: -7.475318}
+        - {x: -15.50292, y: -30.47532}
+        - {x: -7.502917, y: -37.47532}
+        - {x: -0.5029173, y: -37.47532}
+        - {x: 3.497083, y: -35.47532}
+        - {x: 14.49708, y: 1.524681}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651a248ebb5546bd8340447eb0cc5546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_22
+      rect:
+        serializedVersion: 2
+        x: 43.02675
+        y: 34.02675
+        width: 48
+        height: 79.99999
+      alignment: 9
+      pivot: {x: 0.49944276, y: 0.4996656}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.97532, y: -0.5133781}
+        - {x: -18.97532, y: 32.48662}
+        - {x: 6.024685, y: 32.48662}
+        - {x: 19.02468, y: 0.4866219}
+        - {x: 19.02468, y: -37.51338}
+        - {x: -7.975315, y: -37.51338}
+      physicsShape:
+      - - {x: 14.02468, y: 11.48662}
+        - {x: 3.024685, y: 31.48662}
+        - {x: -9.975314, y: 31.48662}
+        - {x: -17.97532, y: 26.48662}
+        - {x: -17.97532, y: 7.486621}
+        - {x: 2.024685, y: -36.51338}
+        - {x: 15.02468, y: -36.51338}
+        - {x: 18.02468, y: -33.51338}
+        - {x: 19.02468, y: -30.51338}
+        - {x: 19.02468, y: -22.51338}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f404ef373a7455a94ff2532193528e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_23
+      rect:
+        serializedVersion: 2
+        x: 90.07612
+        y: 35.07612
+        width: 39.000008
+        height: 78.99999
+      alignment: 9
+      pivot: {x: 0.51086867, y: 0.49903652}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.02468, y: -32.52468}
+        - {x: -13.02468, y: -28.52468}
+        - {x: -15.02468, y: -24.52468}
+        - {x: -15.02468, y: 7.475315}
+        - {x: -4.024682, y: 34.47532}
+        - {x: 13.97532, y: 34.47532}
+        - {x: 13.97532, y: 2.475315}
+        - {x: -0.02468204, y: -30.52468}
+        - {x: -4.024682, y: -34.52468}
+        - {x: -7.024682, y: -34.52468}
+      physicsShape:
+      - - {x: 12.97532, y: 29.47531}
+        - {x: 7.97532, y: 33.47531}
+        - {x: -1.02468, y: 33.47531}
+        - {x: -7.02468, y: 22.47532}
+        - {x: -14.02468, y: -10.52468}
+        - {x: -14.02468, y: -21.52468}
+        - {x: -11.02468, y: -33.52468}
+        - {x: -1.02468, y: -33.52468}
+        - {x: 2.97532, y: -20.52468}
+        - {x: 10.97532, y: 6.475315}
+        - {x: 12.97532, y: 18.47532}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a006eb1a1448ffa65449a4e44a647a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_24
+      rect:
+        serializedVersion: 2
+        x: 127.076096
+        y: 34.02675
+        width: 43
+        height: 78.99999
+      alignment: 9
+      pivot: {x: 0.4866017, y: 0.49966136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.024689, y: 34.5}
+        - {x: 4.975311, y: 29.49999}
+        - {x: 16.97531, y: -12.5}
+        - {x: 16.97531, y: -30.5}
+        - {x: 14.97531, y: -34.5}
+        - {x: -3.024689, y: -34.5}
+        - {x: -16.02469, y: 5.499996}
+        - {x: -16.02469, y: 34.5}
+      physicsShape:
+      - - {x: -4.024689, y: 33.49999}
+        - {x: -12.02469, y: 33.49999}
+        - {x: -16.02469, y: 27.5}
+        - {x: -16.02469, y: 15.5}
+        - {x: -13.02469, y: 4.499996}
+        - {x: -6.024689, y: -11.5}
+        - {x: 5.975311, y: -33.5}
+        - {x: 12.97531, y: -33.5}
+        - {x: 15.97531, y: -32.5}
+        - {x: 15.97531, y: -19.5}
+        - {x: 2.975311, y: 26.49999}
+        - {x: -2.024689, y: 32.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: af05b392f5814882ba673b65cf84a652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_25
+      rect:
+        serializedVersion: 2
+        x: 166.0541
+        y: 67.02675
+        width: 54
+        height: 46.999992
+      alignment: 9
+      pivot: {x: 0.4897382, y: 0.49943095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.48899, y: -9.501873}
+        - {x: -21.48899, y: 18.49813}
+        - {x: 0.5110035, y: 18.49813}
+        - {x: 22.511, y: -0.501873}
+        - {x: 22.511, y: -9.501873}
+        - {x: 18.511, y: -18.50187}
+        - {x: 0.5110035, y: -18.50187}
+      physicsShape:
+      - - {x: -21.48899, y: 17.49813}
+        - {x: -21.48899, y: -8.501875}
+        - {x: -20.489, y: -14.50187}
+        - {x: -2.488996, y: -17.50187}
+        - {x: 12.511, y: -17.50187}
+        - {x: 19.511, y: -13.50187}
+        - {x: 22.511, y: -9.501875}
+        - {x: 22.511, y: 2.498125}
+        - {x: 2.511003, y: 17.49813}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228d66969a4b4d258e32b38a8647ddf2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_26
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 51.499996
+        width: 30
+        height: 63.000004
+      alignment: 9
+      pivot: {x: 0.48333335, y: 0.4603175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 25.5}
+        - {x: -8, y: 26.5}
+        - {x: -5, y: 26.5}
+        - {x: 10, y: 10.5}
+        - {x: 10, y: -26.5}
+        - {x: 0, y: -26.5}
+        - {x: -10, y: -8.499998}
+      physicsShape:
+      - - {x: -10, y: 24.5}
+        - {x: -10, y: -4.500002}
+        - {x: -7, y: -26.5}
+        - {x: 9, y: -26.5}
+        - {x: 9, y: -2.500002}
+        - {x: -3, y: 24.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a461053cbf14dc79868988c8e17b8df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_27
+      rect:
+        serializedVersion: 2
+        x: 244.0597
+        y: 46.07613
+        width: 35
+        height: 65
+      alignment: 9
+      pivot: {x: 0.49829364, y: 0.49882877}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.4918, y: 7.499996}
+        - {x: -12.4918, y: 27.5}
+        - {x: -6.491798, y: 27.5}
+        - {x: 7.508201, y: 10.5}
+        - {x: 12.5082, y: -0.5000038}
+        - {x: 12.5082, y: -27.5}
+        - {x: -4.491798, y: -27.5}
+      physicsShape:
+      - - {x: -7.491798, y: 26.5}
+        - {x: -11.4918, y: 26.5}
+        - {x: -11.4918, y: 1.5}
+        - {x: -6.491798, y: -26.5}
+        - {x: 10.5082, y: -26.5}
+        - {x: 11.5082, y: -23.5}
+        - {x: 11.5082, y: -0.5}
+        - {x: 3.508202, y: 16.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d57b296b58654bffb4fc924375dfb8f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_28
+      rect:
+        serializedVersion: 2
+        x: 164.0429
+        y: 30.076118
+        width: 58
+        height: 44
+      alignment: 9
+      pivot: {x: 0.49926022, y: 0.49827012}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.995796, y: -17.0124}
+        - {x: -20.9958, y: -14.0124}
+        - {x: -23.9958, y: -3.012402}
+        - {x: -23.9958, y: 16.9876}
+        - {x: 0.004203796, y: 16.9876}
+        - {x: 2.004204, y: 15.9876}
+        - {x: 24.0042, y: -1.012402}
+        - {x: 24.0042, y: -3.012402}
+        - {x: 22.0042, y: -7.012402}
+        - {x: 16.0042, y: -17.0124}
+      physicsShape:
+      - - {x: 13.0042, y: 2.987598}
+        - {x: -4.995796, y: 13.9876}
+        - {x: -11.9958, y: 15.9876}
+        - {x: -18.9958, y: 15.9876}
+        - {x: -22.99579, y: 14.9876}
+        - {x: -22.99579, y: -1.012402}
+        - {x: -19.99579, y: -12.0124}
+        - {x: -2.995796, y: -16.0124}
+        - {x: 17.0042, y: -16.0124}
+        - {x: 23.0042, y: -4.012402}
+        - {x: 23.0042, y: -1.012402}
+        - {x: 20.0042, y: 0.9875984}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e54beba465c4390989898481d79c3cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_29
+      rect:
+        serializedVersion: 2
+        x: 203.7964
+        y: 294.269
+        width: 17
+        height: 16
+      alignment: 9
+      pivot: {x: 0.45315012, y: 0.42069054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1.5, y: -3}
+        - {x: -3.5, y: -0.9999999}
+        - {x: -3.5, y: 1}
+        - {x: -1.5, y: 3}
+        - {x: 2.5, y: 3}
+        - {x: 3.5, y: 1}
+        - {x: 3.5, y: -2}
+        - {x: 1.5, y: -3}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306378be2c484d4a84c7d460b48c73bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_30
+      rect:
+        serializedVersion: 2
+        x: 192.983
+        y: 312.2244
+        width: 27
+        height: 14.775604
+      alignment: 9
+      pivot: {x: 0.5191498, y: 0.6277648}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: -1.387802}
+        - {x: -8.499999, y: 0.6121979}
+        - {x: -8.499999, y: 2.612198}
+        - {x: -6.5, y: 3.612198}
+        - {x: 5.5, y: 3.612198}
+        - {x: 8.5, y: 1.612198}
+        - {x: 8.5, y: -2.387802}
+        - {x: -5.5, y: -2.387802}
+      physicsShape:
+      - - {x: 7.982955, y: -7.27562}
+        - {x: 6.982955, y: -4.27562}
+        - {x: -5.017045, y: -4.27562}
+        - {x: -6.017045, y: -7.27562}
+      - - {x: 0.982955, y: -2.27562}
+        - {x: 3.982955, y: -1.27562}
+        - {x: 3.982955, y: 1.72438}
+        - {x: 0.982955, y: 2.72438}
+        - {x: -1.017045, y: 0.7243805}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd017469d38a433eada6f37313a239a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_hasumiTfront_31
+      rect:
+        serializedVersion: 2
+        x: 193.3972
+        y: 301.604
+        width: 27
+        height: 22
+      alignment: 9
+      pivot: {x: 0.42973158, y: 0.44981802}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 6}
+        - {x: 4.5, y: 6}
+        - {x: 8.5, y: 2}
+        - {x: 8.5, y: -1}
+        - {x: 7.5, y: -5}
+        - {x: 5.5, y: -6}
+        - {x: -6.5, y: -6}
+        - {x: -8.5, y: -2}
+        - {x: -8.5, y: 3}
+      physicsShape:
+      - - {x: -5.602767, y: 4.104005}
+        - {x: -8.602768, y: 1.104005}
+        - {x: -8.602768, y: -0.8959951}
+        - {x: -6.602768, y: -1.895995}
+        - {x: 1.397232, y: -1.895995}
+        - {x: 4.397232, y: -0.8959951}
+        - {x: 6.397232, y: 1.104005}
+        - {x: 5.397232, y: 4.104005}
+      - - {x: -0.6027679, y: 6.104005}
+        - {x: 2.397232, y: 7.104005}
+        - {x: 2.397232, y: 10.104}
+        - {x: -0.6027679, y: 11.104}
+        - {x: -2.602768, y: 9.104005}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0880b82a746245e893558c44822f7417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 637669619218968784
+  assetBundleName: 
+  assetBundleVariant: 
