@@ -189,13 +189,21 @@ def anima2d_to_dragon_bones():
         physics_shape = sprite['physicsShape'] if 'physicsShape' in sprite else []
 
         print(name)
-        print(sprite['border'])
-        print(sprite['outline'])
-        print(sprite['physicsShape'])
+        # print(sprite['border'])
+        # print(sprite['outline'])
+        # print(sprite['physicsShape'])
+        #
+        # bones = sprite['bones']
+        # print(bones)
 
         im1 = im.crop((x, y, x + width, y + height))
 
         filename = "unpack/" + name
+
+        # data['armature'][0]['bone'].append({
+        #     'name': name,
+        #     "parent": "root"
+        # })
 
         data['armature'][0]['slot'].append({
             'name': name,
