@@ -1,18 +1,64 @@
 import yaml
 import json
 
+# TypeScript changed me
+from typing import TypedDict, Optional, Dict, List
+
+
+# Type defs
+class Coordinates(TypedDict):
+    x: str
+    y: str
+    z: str
+    w: Optional[str]
+
+
+class Color(TypedDict):
+    r: str
+    g: str
+    b: str
+    a: Optional[str]
+
+
+class Bone(TypedDict):
+    name: str
+    rotation: Optional[Coordinates]
+    position: Optional[Coordinates]
+    scale: Optional[Coordinates]
+    euler_angles: Optional[Coordinates]
+    color: Optional[Color]
+    length: Optional[str]
+    child: Optional[str]
+    children: List[int]
+
+
+class Bones(TypedDict):
+    root: Optional[Bone]
+    id: Optional[List[Bone]]
+
 # Unity consts - Screaming at y'a
 TRANSFORM = '4'
 GAME_OBJECT = '1'
 SKINNED_MESH_RENDERER = '137'
+MONO_BEHAVIOUR = '114'
 
 # Will store transforms and GameObject for further mapping
 transforms = {}
 game_objects = {}
 skin_mesh_rend = {}
 
+# Bones, for now just a test
+bones: Bones = {}
+behaviours = {}
+
+export_mode_bones = []
+
 # Used to locate back Transforms when applying to DragonBones Skeleton
 game_object_lookup_transform = {}
+
+# Scale it ! 100 seems safe from Unity => DragonBones
+SCALE_FACTOR = 100
+
 
 FILENAME = 'Base1.unity'
 
@@ -44,6 +90,270 @@ with open(FILENAME, 'r', encoding='utf-8') as file:
             skin_mesh_rend[file_id] = yaml.safe_load(block[file_id_index_end:])
             # print(f'{file_id} -> SkinnedMeshRenderer')
 
+        elif block_type == MONO_BEHAVIOUR:
+            behaviours[file_id] = yaml.safe_load(block[file_id_index_end:])
+
+# Get the root bone and try to build index from it
+
+def fetch_children_bone_from(bone_id):
+    """Fetch children from bone, recursively"""
+    bone_id_s = str(bone_id)
+    if bone_id not in bones['id'] and bone_id_s in transforms:
+
+        bone = transforms[bone_id_s]['Transform']
+
+        game_object_id: int = bone['m_GameObject']['fileID']
+        game_object_id_s: str = str(game_object_id)
+
+        name: str = f'Unnamed_bone_{bone_id_s}'
+
+        children: List[int] = [i['fileID'] for i in bone['m_Children']]
+
+        rotation: Coordinates = bone['m_LocalRotation']
+        position: Coordinates = bone['m_LocalPosition']
+        scale: Coordinates = bone['m_LocalScale']
+        euler_angles: Coordinates = bone['m_LocalEulerAnglesHint']
+
+        my_bone: Bone = {
+            'name': name,
+            'rotation': rotation,
+            'position': position,
+            'scale': scale,
+            'euler_angles': euler_angles,
+            'children': children
+        }
+
+        if game_object_id_s in game_objects:
+            game_object = game_objects[game_object_id_s]['GameObject']
+
+            if 'm_Component' in game_object:
+                for c in game_object['m_Component']:
+                    file_id = str(c['component']['fileID'])
+                    if file_id in behaviours:
+                        b = behaviours[file_id]['MonoBehaviour']
+                        if 'm_Color' in b:
+                            my_bone['color'] = b['m_Color']
+                        if 'm_Length' in b:
+                            my_bone['length'] = b['m_Length']
+                        # Behaviour is unknown ? IK maybe ?
+                        # else:
+                        #     print(b)
+
+            # TODO: get layer from m_Layer ?
+            my_bone['name'] = game_object["m_Name"]
+
+        bones['id'][bone_id] = my_bone
+
+        for child_id in children:
+            if child_id not in bones['id']:
+                new_bone: Bone = fetch_children_bone_from(child_id)
+                if new_bone is not None:
+                    db_bone = {
+                        "length": str(round(float(new_bone['length'])*SCALE_FACTOR)) if 'length' in new_bone else '0',
+                        "name": new_bone['name'],
+                        "parent": my_bone['name'],
+                        "transform": {
+                            "x": new_bone['position']['x']*SCALE_FACTOR,
+                            "y": -1 * new_bone['position']['y']*SCALE_FACTOR
+                        },
+                    }
+
+                    # euler_angles Z is the rotation
+                    if 'euler_angles' in new_bone and 'z' in new_bone['euler_angles']:
+                        z_rotate = round(float(new_bone['euler_angles']['z']), 3)
+
+                        if z_rotate != 0:
+                            db_bone["transform"]["skX"] = z_rotate
+                            db_bone["transform"]["skY"] = z_rotate
+
+                    export_mode_bones.append(db_bone)
+
+        return my_bone
+    return None
+
+
+ROOT_BONE = 'Bones_Tfront'  # OR HasumiEd0318 ??
+
+
+
+for file_id, g in game_objects.items():
+    game_object = g['GameObject']
+
+    if game_object["m_Name"] == ROOT_BONE:
+        root_components_id = [i['component']['fileID'] for i in game_object['m_Component']]
+
+        for root_component_id in root_components_id:
+            root_component_id_s = str(root_component_id)
+
+            # Try to find if id is in transforms
+            # parent-child relation is made by the transform, where the name is found by the game_object
+            if root_component_id_s in transforms:
+                t = transforms[root_component_id_s]
+
+                transform = t['Transform']
+
+                children = [i['fileID'] for i in transform['m_Children']]
+
+                bones['root']: Bone = {
+                    'name': game_object["m_Name"],
+                    'children': children
+                }
+
+                # print(transform)
+
+        for root_component_id in root_components_id:
+            root_component_id_s = str(root_component_id)
+
+            if root_component_id_s in behaviours:
+                b = behaviours[root_component_id_s]['MonoBehaviour']
+                print(b)
+
+                if 'root' in bones:
+                    if 'm_Color' in b:
+                        bones['root']['color'] = b['m_Color']
+                    if 'm_Length' in b:
+                        bones['root']['length'] = b['m_Length']
+                    if 'm_ChildTransform' in b:
+                        child = b['m_ChildTransform']['fileID']
+                        if str(child) in transforms:
+                            bones['root']['child'] = child
+
+                    # color: Optional[str]
+                    #     alpha: Optional[str]
+                    #     length: Optional[str]
+                    #     child: Optional[str]
+
+        if 'root' in bones:
+
+            # export_mode_bones.append({
+            #     "name": bones['root']['name'],
+            #     "parent": "root",
+            #     "transform": {
+            #         "x": -13.06,
+            #         "y": -65.03
+            #     },
+            # })
+
+            bones['id'] = {}
+            for bone_id in bones['root']['children']:
+                new_bone = fetch_children_bone_from(bone_id)
+
+                db_bone = {
+                    "length": str(round(float(new_bone['length']) * SCALE_FACTOR)) if 'length' in new_bone else '0',
+                    "name": new_bone['name'],
+                    "parent": "root",
+                    "transform": {
+                        "x": new_bone['position']['x'] * SCALE_FACTOR,
+                        "y": -1 * new_bone['position']['y'] * SCALE_FACTOR
+                    },
+                }
+
+                if 'euler_angles' in new_bone and 'z' in new_bone['euler_angles']:
+                    z_rotate = round(float(new_bone['euler_angles']['z']), 3)
+
+                    if z_rotate != 0:
+                        db_bone["transform"]["skX"] = z_rotate
+                        db_bone["transform"]["skY"] = z_rotate
+
+                export_mode_bones.append(db_bone)
+
+            print(bones)
+            break
+
+
+# save mid-stage bones tree
+with open('hasumiTfront_bones_struct.json', 'w+', encoding='utf-8') as file:
+    json.dump(bones, file)
+
+# Loading the DragonBones skeleton to inject its position back
+with open('hasumiTfront_ske.json', encoding='utf-8') as file:
+    hasumiTfront_ske = json.load(file)
+
+
+# print bones
+
+MAX_INDENT_SIZE_WITH_NAME = 42
+
+
+def print_bone(bone: Bone, bone_id: int = 0, header: str = '', space=False, indent=0, position=0, size=0):
+    """Print a bone pretty"""
+    name = bone['name']
+    # ─ │ ┐ ┘ ┌ └ ├ ┤ ┬ ┴ ┼
+
+    # if position == size:
+    #     header += '  '
+    # else:
+    #     header += '│ '
+
+    if indent > 0:
+        if space:
+            header += '  '
+        else:
+            header += '│ '
+
+    indent += 1
+
+    tail = ''
+    # if indent >= 1:
+    #   head = '│ '*(indent-1)
+    if position < size:
+        tail += '├─'
+        space = False
+    else:
+        tail += '└─'
+        space = True
+
+    details = ' ' * (MAX_INDENT_SIZE_WITH_NAME - (len(name) + 2*(indent+1)))
+    if 'position' in bone:
+        details += f"\tP {bone['position']['x']}:{bone['position']['y']}:{bone['position']['z']}"
+    if 'rotation' in bone:
+        details += f" R {bone['rotation']['x']}:{bone['rotation']['y']}:{bone['rotation']['z']}"
+    if 'scale' in bone:
+        details += f"\tS {bone['scale']['x']}:{bone['scale']['y']}:{bone['scale']['z']}"
+    if 'euler_angles' in bone:
+        details += f"\tE {bone['euler_angles']['x']}:{bone['euler_angles']['y']}:{bone['euler_angles']['z']}"
+    if 'color' in bone:
+        details += f"\tC {bone['color']['r']}:{bone['color']['g']}:{bone['color']['b']}"
+    if 'child' in bone:
+        details += f"\tT {bone['child']} (Transform)"
+    if 'length' in bone:
+        details += f"\tL {bone['length']}"
+
+        # rotation
+    # position
+    # scale
+    # euler_angles
+
+    print(f"{header}{tail}{name} [{bone_id:^6}] {details}")
+
+    i = 0
+    l = len(bone['children'])
+
+    for child_id in bone['children']:
+        i += 1
+
+        if child_id in bones['id']:
+            print_bone(bones['id'][child_id], child_id, header, space, indent, position=i, size=l)
+
+
+if 'root' in bones:
+    print(":: BONES LIST  ::")
+    print_bone(bones['root'])
+    print("\n")
+
+# Save all bones to skel
+
+hasumiTfront_ske['armature'][0]['bone'] = [
+    {
+        "name": "root",
+        "transform": {
+            "x": -0.8394,
+            "y": -6.7154,
+        }
+    }
+]
+hasumiTfront_ske['armature'][0]['bone'].extend(export_mode_bones)
+
 # Keeping track of the drawing order
 draw_order = {}
 
@@ -73,10 +383,6 @@ for file_id, s in skin_mesh_rend.items():
 
     if game_object_id in game_objects:
         game_objects[game_object_id]['_skin_mesh'] = skin_mesh
-
-# Loading the DragonBones skeleton to inject its position back
-with open('hasumiTfront_ske.json', encoding='utf-8') as file:
-    hasumiTfront_ske = json.load(file)
 
 
 # Reading the GameObjects and displaying them with some Unity-looking T-UI !
@@ -160,10 +466,6 @@ for file_id, g in game_objects.items():
     #         transform = transforms[c_id]
     #         print(f'>   {transform}')
 
-
-# Scale it ! 100 seems safe from Unity => DragonBones
-SCALE_FACTOR = 100
-
 # Note :
 # Draw Order is ['armature'][0]['slot'] order, it's displayed reversed
 
@@ -188,5 +490,5 @@ for slot in hasumiTfront_ske['armature'][0]['skin'][0]['slot']:
         slot['display'][0]['transform']['y'] = round(-1 * transform['m_LocalPosition']["y"] * SCALE_FACTOR, 3)
 
 # And finally write back our happy skeleton !
-with open('hasumiTfront_out_ske.json', 'w+', encoding='utf-8') as file:
+with open('hasumiTfront_out_withBones_ske.json', 'w+', encoding='utf-8') as file:
     json.dump(hasumiTfront_ske, file)
