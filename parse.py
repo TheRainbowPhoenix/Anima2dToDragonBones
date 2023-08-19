@@ -6,8 +6,16 @@ from shapely.geometry import Polygon, mapping
 from shapely.geometry import MultiPoint
 from shapely.ops import triangulate
 
+# CHANGE THIS WITH YOUR FILE
+# Image name (auto-prefixed with image_)
+anima2d_name = "hasumiFront"
+# Save extracted sprites to "unpack" folder
+save_img = False
 
-# os.mkdir("unpack")
+# USAGE: RUN then copy generated JSON to Stage2 "SceneParser"
+
+if not os.path.isdir("unpack"):
+    os.mkdir("unpack")
 
 def generate_edges(vertices: list) -> list:
     points = [(x, y) for x, y in zip(vertices[::2], vertices[1::2])]
@@ -112,8 +120,6 @@ def generate_uvs(outline: list, width: int, height: int) -> list:
     return points
 
 def anima2d_to_dragon_bones():
-    anima2d_name = "hasumiTfront"
-
     data = {
         "frameRate": 24,
         "name": f"{anima2d_name}",
@@ -168,9 +174,9 @@ def anima2d_to_dragon_bones():
     Iwidth, Iheight = im.size
 
     with open(f'image_{anima2d_name}.png.meta', 'r') as file:
-        image_hasumiTfront = yaml.safe_load(file)
+        image_hasumi = yaml.safe_load(file)
 
-    spriteSheet = image_hasumiTfront['TextureImporter']['spriteSheet']
+    spriteSheet = image_hasumi['TextureImporter']['spriteSheet']
 
     for sprite in spriteSheet['sprites']:
         width = sprite['rect']['width']
@@ -301,7 +307,8 @@ def anima2d_to_dragon_bones():
 
         # Hack cause I'm terrible with UV
         # im1 = ImageOps.flip(im1)
-        # im1.save(filename + ".png", "PNG")
+        if save_img:
+            im1.save(filename + ".png", "PNG")
 
     with open(f"{anima2d_name}_ske.json", "w+") as out:
         import json

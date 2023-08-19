@@ -61,6 +61,19 @@ SCALE_FACTOR = 100
 
 
 FILENAME = 'Base1.unity'
+# SKE_FILE = 'hasumiTback_ske'
+SKE_FILE = 'hasumiTfront_ske'
+# SKE_FILE = 'hasumiFront_ske'
+
+# IMAGES_PREFIX = 'image_hasumiTback_'
+IMAGES_PREFIX = 'image_hasumiTfront_'
+# IMAGES_PREFIX = 'image_Tfront_'
+
+# ROOT_BONE = None
+# ROOT_BONE_ID = 1836
+ROOT_BONE_ID = None
+# ROOT_BONE = 'Bones_Tback'  # OR HasumiEd0318 ??
+ROOT_BONE = 'Bones_Tfront'  # OR HasumiEd0318 ??
 
 # Opens te hardcoded file
 with open(FILENAME, 'r', encoding='utf-8') as file:
@@ -82,7 +95,6 @@ with open(FILENAME, 'r', encoding='utf-8') as file:
             # print(f'{file_id} -> Transform')
         elif block_type == GAME_OBJECT:
             # Filtering only needed values for now
-            # if 'm_Name: image_hasumiTfront_' in block:
             game_objects[file_id] = yaml.safe_load(block[file_id_index_end:])
 
                 # print(f'{file_id} -> GameObject')
@@ -172,14 +184,21 @@ def fetch_children_bone_from(bone_id):
     return None
 
 
-ROOT_BONE = 'Bones_Tfront'  # OR HasumiEd0318 ??
-
-
+present = False
 
 for file_id, g in game_objects.items():
     game_object = g['GameObject']
 
-    if game_object["m_Name"] == ROOT_BONE:
+    if ROOT_BONE is not None:
+        if game_object["m_Name"] == ROOT_BONE:
+            present = True
+    elif ROOT_BONE_ID is not None:
+        root_components_id = [i['component']['fileID'] for i in game_object['m_Component']]
+
+        if ROOT_BONE_ID in root_components_id:
+            present = True
+
+    if present:
         root_components_id = [i['component']['fileID'] for i in game_object['m_Component']]
 
         for root_component_id in root_components_id:
@@ -262,12 +281,12 @@ for file_id, g in game_objects.items():
 
 
 # save mid-stage bones tree
-with open('hasumiTfront_bones_struct.json', 'w+', encoding='utf-8') as file:
+with open(f'{SKE_FILE}_bones_struct.json', 'w+', encoding='utf-8') as file:
     json.dump(bones, file)
 
 # Loading the DragonBones skeleton to inject its position back
-with open('hasumiTfront_ske.json', encoding='utf-8') as file:
-    hasumiTfront_ske = json.load(file)
+with open(f'{SKE_FILE}.json', encoding='utf-8') as file:
+    hasumi_ske = json.load(file)
 
 
 # print bones
@@ -343,7 +362,7 @@ if 'root' in bones:
 
 # Save all bones to skel
 
-hasumiTfront_ske['armature'][0]['bone'] = [
+hasumi_ske['armature'][0]['bone'] = [
     {
         "name": "root",
         "transform": {
@@ -352,7 +371,7 @@ hasumiTfront_ske['armature'][0]['bone'] = [
         }
     }
 ]
-hasumiTfront_ske['armature'][0]['bone'].extend(export_mode_bones)
+hasumi_ske['armature'][0]['bone'].extend(export_mode_bones)
 
 # Keeping track of the drawing order
 draw_order = {}
@@ -368,7 +387,7 @@ for file_id, t in transforms.items():
         # I guess the easiest way to use transform in the GameObject, should refactor this if it get serious
         game_objects[game_object_id]['_transform'] = transform
 
-        if game_objects[game_object_id]['GameObject']["m_Name"].startswith('image_hasumiTfront_'):
+        if game_objects[game_object_id]['GameObject']["m_Name"].startswith(IMAGES_PREFIX):
             # Get that drawing order for later
             order = transform['m_RootOrder']
             draw_order[order] = {
@@ -396,7 +415,7 @@ for file_id, g in game_objects.items():
 
     name = game_object["m_Name"]
 
-    if not 'image_hasumiTfront_' in name:
+    if not IMAGES_PREFIX in name:
         continue
 
     print(f'{icon} {name:<28} \t\t\t\t :{file_id}')
@@ -470,15 +489,15 @@ for file_id, g in game_objects.items():
 # Draw Order is ['armature'][0]['slot'] order, it's displayed reversed
 
 # Keeping track of older slots, sorting new one and merging old slots back ! Python's awesome
-old_slots_order = hasumiTfront_ske['armature'][0]['slot']
+old_slots_order = hasumi_ske['armature'][0]['slot']
 
 slots = [draw_order[k] for k in sorted(draw_order)]
 slots.extend(s for s in old_slots_order if s not in slots)
 
-hasumiTfront_ske['armature'][0]['slot'] = slots
+hasumi_ske['armature'][0]['slot'] = slots
 
 
-for slot in hasumiTfront_ske['armature'][0]['skin'][0]['slot']:
+for slot in hasumi_ske['armature'][0]['skin'][0]['slot']:
     name = slot['name'].replace('_boundingBox', '')
 
     # Use the lookup to find back the transform !
@@ -490,5 +509,5 @@ for slot in hasumiTfront_ske['armature'][0]['skin'][0]['slot']:
         slot['display'][0]['transform']['y'] = round(-1 * transform['m_LocalPosition']["y"] * SCALE_FACTOR, 3)
 
 # And finally write back our happy skeleton !
-with open('hasumiTfront_out_withBones_ske.json', 'w+', encoding='utf-8') as file:
-    json.dump(hasumiTfront_ske, file)
+with open(f'{SKE_FILE}_out_withBones.json', 'w+', encoding='utf-8') as file:
+    json.dump(hasumi_ske, file)
